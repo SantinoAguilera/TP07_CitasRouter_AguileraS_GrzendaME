@@ -20,9 +20,9 @@ function App() {
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"></link>
       <Navbar listaCitas={listaCitas} setLista={setLista} />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/MisCitas" element={<MisCitas listaCitas={listaCitas} setLista={setLista} />} />
-        <Route path="/NuevasReservas" element={<NuevasReservas listaCitas={listaCitas} setLista={setLista} />} />
+        <Route path="/TP07_CitasRouter_AguileraS_GrzendaME/" element={<Home />} />
+        <Route path="/TP07_CitasRouter_AguileraS_GrzendaME/MisCitas" element={<MisCitas listaCitas={listaCitas} setLista={setLista} />} />
+        <Route path="/TP07_CitasRouter_AguileraS_GrzendaME/NuevasReservas" element={<NuevasReservas listaCitas={listaCitas} setLista={setLista} />} />
       </Routes>
     </>
   )
