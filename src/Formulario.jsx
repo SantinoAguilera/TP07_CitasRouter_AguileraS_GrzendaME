@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Subtitulo from './Subtitulo.jsx'
+import Titulo from './Titulo.jsx'
 import './Formulario.css'
 
 export default function Formulario(props) {
@@ -17,7 +18,8 @@ export default function Formulario(props) {
     }
 
     return (
-        <div className="one-half column">
+        <div className="container">
+            <Titulo titulo="Sistema de Gestión de Citas" />
             <Subtitulo subtitulo="Crear mi Cita" />
             <form onSubmit={agregarCita}>
                 <label>Nombre Mascota</label>

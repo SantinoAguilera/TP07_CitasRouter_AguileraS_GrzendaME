@@ -5,7 +5,7 @@ import Listado from '../Listado.jsx'
 export default function MisCitas(props) {
 
   return (
-    <div>
+    <div className="MisCitas">
       <Listado listaCitas={props.listaCitas} setLista={props.setLista} />
     </div>
   )
