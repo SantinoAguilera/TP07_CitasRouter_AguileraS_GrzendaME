@@ -1,4 +1,5 @@
 import React from 'react'
+import './NuevasReservas.css'
 
 export default function NuevasReservas(props) {
 
