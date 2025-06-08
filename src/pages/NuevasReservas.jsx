@@ -1,5 +1,6 @@
 import React from 'react'
 import { useParams } from 'react-router';
+import './NuevasReservas.css'
 
 export default function NuevasReservas() {
   const {listaCitas, setLista} = useParams();

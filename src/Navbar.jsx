@@ -4,8 +4,8 @@ export default function Navbar(props) {
     return (
         <>
             <Link to="/">Home</Link>
-            <Link to={"/MisCitas/" + props.listaCitas}>Mis Citas</Link>
-            <Link to={"/NuevasReservas/" + props.listaCitas + "/" + props.setLista}>Reservar</Link>
+            <Link to={"/MisCitas"}>Mis Citas</Link>
+            <Link to={"/NuevasReservas"}>Reservar</Link>
         </>
     )
 }

@@ -21,8 +21,8 @@ function App() {
       <Navbar listaCitas={listaCitas} setLista={setLista}/>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/MisCitas/:listaCitas/:setLista" element={<MisCitas />} />
-        <Route path="/NuevasReservas/:listaCitas/:setLista" element={<NuevasReservas />} />
+        <Route path="/MisCitas" element={<MisCitas />} />
+        <Route path="/NuevasReservas" element={<NuevasReservas />} />
       </Routes>
     </>
   )
