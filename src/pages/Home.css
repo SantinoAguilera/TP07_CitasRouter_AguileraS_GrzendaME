@@ -1,7 +1,35 @@
 .Home {
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .HomeBody {
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.LinkBox {
+    background-color: transparent;
+    border: solid white 3px;
+    padding: 50%;
+    border-radius: 10px;
+    margin: 30%;
+    width: 100px;
+    display: inline-block;
+    white-space: nowrap;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-size: large;
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 1px;
+    padding: 15%;
+}
+
+.LinkBox:hover {
+    background-color: white;
+    color: black;
 }

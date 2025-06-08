@@ -8,8 +8,8 @@ export default function Home() {
     <div className='Home'>
       <Titulo titulo="Sistema de Gestión de Citas" />
       <div className='HomeBody'>
-        <Link to={"/MisCitas"}>Mis Citas</Link>
-        <Link to={"/NuevasReservas"}>Reservar</Link>
+        <Link to={"/MisCitas"} className='LinkBox'>Mis Citas</Link>
+        <Link to={"/NuevasReservas"} className='LinkBox'>Reservar</Link>
       </div>
     </div>
   )
