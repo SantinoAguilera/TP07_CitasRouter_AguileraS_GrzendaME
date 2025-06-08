@@ -1,13 +1,11 @@
 import React from 'react'
-import { useParams } from 'react-router';
 import './NuevasReservas.css'
 
-export default function NuevasReservas() {
-  const {listaCitas, setLista} = useParams();
+export default function NuevasReservas(props) {
 
   return (
     <div>
-      <Formulario listaCitas={listaCitas} setLista={setLista} />
+      <Formulario listaCitas={props.listaCitas} setLista={props.setLista} />
     </div>
   )
 }
