@@ -1,4 +1,4 @@
-import { Routes, Route} from 'react-router'
+import { Routes, Route } from 'react-router'
 import { React, useEffect, useState } from 'react'
 import './App.css'
 import Navbar from './Navbar';
@@ -18,11 +18,11 @@ function App() {
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"></link>
       <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet"></link>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"></link>
-      <Navbar listaCitas={listaCitas} setLista={setLista}/>
+      <Navbar listaCitas={listaCitas} setLista={setLista} />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/MisCitas/:listaCitas/:setLista" element={<MisCitas />} />
-        <Route path="/NuevasReservas/:listaCitas/:setLista" element={<NuevasReservas />} />
+        <Route path="/MisCitas/:listaCitas/:setLista" element={<MisCitas listaCitas setLista />} />
+        <Route path="/NuevasReservas/:listaCitas/:setLista" element={<NuevasReservas listaCitas setLista />} />
       </Routes>
     </>
   )

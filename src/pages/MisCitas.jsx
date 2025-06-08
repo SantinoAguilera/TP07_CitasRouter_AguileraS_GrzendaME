@@ -1,12 +1,10 @@
 import React from 'react'
-import { useParams } from 'react-router';
 
-export default function MisCitas() {
-  const {listaCitas, setLista} = useParams();
-  
+export default function MisCitas(props) {
+
   return (
     <div>
-      <Listado listaCitas={listaCitas} setLista={setLista} />
+      <Listado listaCitas={props.listaCitas} setLista={props.setLista} />
     </div>
   )
 }
